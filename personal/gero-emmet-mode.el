@@ -1,4 +1,4 @@
-;;; prelude-emmet.el --- Emacs prelude Emmet configuration
+;;; gero-emmet-mode.el --- Emacs prelude Emmet configuration
 
 ;;; Commentary:
 ;; This is the emmet file
@@ -40,5 +40,5 @@
 
 
 
-(provide 'prelude-emmet)
-;;; prelude-emmet.el ends here
+(provide 'gero-emmet-mode)
+;;; gero-emmet-mode.el ends here

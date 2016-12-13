@@ -1,4 +1,4 @@
-;;; prelude-local.el --- Emacs prelude local intialization
+;;; gero-origami-mode.el --- Emacs prelude local intialization
 
 ;;; Commentary:
 ;; 
@@ -13,17 +13,17 @@
 
 (eval-after-load 'origami-mode
   '(progn
-     (defun prelude-origami-mode-defaults ()
+     (defun gero-origami-mode-defaults ()
        ;; add to origami-mode-map
        (let ((map origami-mode-map))
          (define-key map (kbd "C-c @ C-s") 'origami-open-node)
          (define-key map (kbd "C-c @ C-h") 'origami-close-node)
          (define-key map (kbd "C-+") 'origami-toggle-node)))
 
-     (setq prelude-origami-mode-hook 'prelude-origami-mode-defaults)
+     (setq gero-origami-mode-hook 'gero-origami-mode-defaults)
 
      (add-hook 'origami-mode (lambda ()
-                               (run-hooks 'prelude-origami-mode-hook)))))
+                               (run-hooks 'gero-origami-mode-hook)))))
 
-(provide 'prelude-origami)
-;;; prelude-origami.el ends here
+(provide 'gero-origami-mode)
+;;; gero-origami-mode.el ends here

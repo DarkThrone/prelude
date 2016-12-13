@@ -1,4 +1,4 @@
-;;; gero-yasnippet.el --- Yasnippet configuration
+;;; gero-yasnippet-mode.el --- Yasnippet configuration
 
 ;;; Commentary:
 
@@ -7,6 +7,7 @@
 (require 'prelude-packages)
 
 (prelude-require-package 'yasnippet)
+
 (require 'yasnippet)
 
 ;; personal snippets
@@ -16,7 +17,5 @@
 (yas-reload-all)
 (add-hook 'org-mode-hook 'yas-minor-mode)
 
-
-
-(provide 'gero-yasnippet)
-;;; gero-yasnippet.el ends here
+(provide 'gero-yasnippet-mode)
+;;; gero-yasnippet-mode.el ends here
