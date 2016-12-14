@@ -17,6 +17,8 @@
 (setq org-src-fontify-natively t)
 (setq org-confirm-babel-evaluate nil)
 (setq org-src-window-setup 'current-window)
+(setq org-plantuml-jar-path
+      (expand-file-name "~/.emacs.d/vendor/plantuml.jar"))
 
 (org-babel-do-load-languages
  'org-babel-load-languages
@@ -25,7 +27,8 @@
    (java       . t)
    (js         . t)
    (ruby       . t)
-   (python     . t)))
+   (python     . t)
+   (plantuml   . t)))
 
 (add-to-list 'org-babel-tangle-lang-exts '("js"      . "js"))
 
