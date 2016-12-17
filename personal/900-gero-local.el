@@ -4,17 +4,17 @@
 ;;
 
 ;;; Code:
+(defvar user-home (getenv "HOME"))
+
 (setq default-frame-alist '((font . "Meslo LG M DZ-13")))
-
-
 (setq prelude-whitespace nil)
 
 (global-linum-mode 1)
 
-(find-file "/Users/gsgritta/.emacs.d/personal/gero-local.el")
+(find-file (concat user-home "/.emacs.d/personal/900-gero-local.el"))
 (toggle-frame-maximized)
 (split-window-horizontally)
-(find-file "/Users/gsgritta/org-docs/daily-notes.org")
+(find-file (concat user-home "/org-docs/daily-notes.org"))
 
 (setq mouse-wheel-scroll-amount '(1
                                  ((shift) . 5)
