@@ -4,6 +4,9 @@
 ;;
 
 ;;; Code:
+(setq default-frame-alist '((font . "Meslo LG M DZ-13")))
+
+
 (setq prelude-whitespace nil)
 
 (global-linum-mode 1)
