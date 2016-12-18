@@ -15,6 +15,9 @@
 ; This is to hide the solids from the emphasis markers
 (setq org-hide-emphasis-markers t)
 
+; Show inline images in org-mode
+(setq org-startup-with-inline-images t)
+
 ;This is to change bullet style in lists
 (font-lock-add-keywords 'org-mode
                         '(("^ +\\([-*]\\) "
