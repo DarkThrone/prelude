@@ -10,7 +10,8 @@
 
 (require 'org-bullets)
 
-(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+(add-hook 'org-mode-hook (lambda () (visual-line-mode 1
+                                     org-bullets-mode 1)))
 
 ; This is to hide the solids from the emphasis markers
 (setq org-hide-emphasis-markers t)
