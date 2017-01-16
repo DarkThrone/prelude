@@ -10,6 +10,7 @@
 (setq mac-option-modifier nil)
 
 (global-set-key [?\M-`] 'other-frame)
+(global-set-key (kbd "C-c c i d") 'crux-insert-date)
 
 (setq default-frame-alist '((font . "Meslo LG M DZ-13")))
 (setq prelude-whitespace nil)
