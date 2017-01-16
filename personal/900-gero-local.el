@@ -5,14 +5,24 @@
 
 ;;; Code:
 (defvar user-home (getenv "HOME"))
+(defun open-zsh-rc ()
+  "Open .zshrc configuration fil."
+  (interactive)
+  (find-file (concat user-home "/.zshrc")))
 
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
 
+
 (global-set-key [?\M-`] 'other-frame)
+(global-set-key (kbd "C-c z s h") 'open-zsh-rc)
+(global-set-key (kbd "C-c c i d") 'crux-insert-date)
 
 (setq default-frame-alist '((font . "Meslo LG M DZ-13")))
 (setq prelude-whitespace nil)
+
+(setq-default cursor-type 'bar) 
+(blink-cursor-mode 100)
 
 ;fix for linum mode
 (require 'linum)
@@ -30,4 +40,4 @@
 (global-set-key (kbd "M-S-<mouse-1>") 'mc/add-cursor-on-click)
 
 (provide 'gero-local)
-;;; gero-local.el ends here
+;;; 900-gero-local.el ends here
