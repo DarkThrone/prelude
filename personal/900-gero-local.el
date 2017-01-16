@@ -4,6 +4,9 @@
 ;;
 
 ;;; Code:
+(require 'prelude-packages)
+(require-package 'monokai-theme)
+
 (defvar user-home (getenv "HOME"))
 (defun open-zsh-rc ()
   "Open .zshrc configuration fil."
@@ -13,6 +16,7 @@
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
 
+(load-theme 'monokai t)
 
 (global-set-key [?\M-`] 'other-frame)
 (global-set-key (kbd "C-c z s h") 'open-zsh-rc)

@@ -32,6 +32,17 @@
           (lambda ()
             (local-set-key (kbd "C-c <tab>") #'rust-format-buffer)))
 
+;;; Install GNU Global
+;;;
+;;;brew install global --with-ctags --with-pygments
+;;;
+;;; Copy contents from https://github.com/rust-lang/rust/blob/master/src/etc/ctags.rust to `~/.ctags`
+;;;
+;;;curl https://raw.githubusercontent.com/rust-lang/rust/master/src/etc/ctags.rust
+;;;
+;;; Install `ggtags` for emacs
+;;; Profit.
+
 (add-hook 'prog-mode-hook
           '(lambda ()
              (when (derived-mode-p 'rust-mode)
