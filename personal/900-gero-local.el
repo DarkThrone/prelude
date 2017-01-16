@@ -5,7 +5,7 @@
 
 ;;; Code:
 (require 'prelude-packages)
-(require-package 'monokai-theme)
+(prelude-require-package 'monokai-theme)
 
 (defvar user-home (getenv "HOME"))
 (defun open-zsh-rc ()
@@ -25,7 +25,7 @@
 (setq default-frame-alist '((font . "Meslo LG M DZ-13")))
 (setq prelude-whitespace nil)
 
-(setq-default cursor-type 'bar) 
+(setq-default cursor-type 'bar)
 (blink-cursor-mode 100)
 
 ;fix for linum mode
