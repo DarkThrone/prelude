@@ -18,10 +18,6 @@
 
 (load-theme 'monokai t)
 
-(global-set-key [?\M-`] 'other-frame)
-(global-set-key (kbd "C-c z s h") 'open-zsh-rc)
-(global-set-key (kbd "C-c c i d") 'crux-insert-date)
-
 (setq default-frame-alist '((font . "Meslo LG M DZ-13")))
 (setq prelude-whitespace nil)
 
@@ -41,7 +37,10 @@
                                  ((shift) . 5)
                                  ((control))))
 
+(global-set-key [?\M-`] 'other-frame)
 (global-set-key (kbd "M-S-<mouse-1>") 'mc/add-cursor-on-click)
+(global-set-key (kbd "C-c z s h") 'open-zsh-rc)
+(global-set-key (kbd "C-c c i d") 'crux-insert-date)
 
 (provide 'gero-local)
 ;;; 900-gero-local.el ends here
